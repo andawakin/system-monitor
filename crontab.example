@@ -1,0 +1,3 @@
+# Пример записи в crontab (sudo crontab -e)
+# Запуск проверки диска и памяти каждые 5 минут
+*/5 * * * * /opt/system-monitor/monitor.sh >> /var/log/system-monitor/cron.log 2>&1
